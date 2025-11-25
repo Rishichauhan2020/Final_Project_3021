@@ -13,7 +13,7 @@ print(f"[*] Listening on {HOST}:{PORT}")
 
 while True:
     client_socket, addr = server.accept()
-    print(f"[+] Accepted connection from {addr[0]}:{addr[1]}")
+    print(f"[+] Accepted connection getting from {addr[0]}:{addr[1]}")
 
     filename = client_socket.recv(1024).decode()
 
